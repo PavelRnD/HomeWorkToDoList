@@ -1,0 +1,6 @@
+@HomeWorkToDoList_HostAddress = http://localhost:5134
+
+GET {{HomeWorkToDoList_HostAddress}}/todo/
+Accept: application/json
+
+###

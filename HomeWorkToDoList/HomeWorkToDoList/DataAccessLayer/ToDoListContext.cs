@@ -5,6 +5,10 @@ namespace HomeWorkToDoList.DataAccessLayer
 {
     public class ToDoListContext : DbContext
     {
+        public ToDoListContext(DbContextOptions options) : base(options)
+        {
+        }
+
         public DbSet<ToDo> ToDoList { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
